@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MIME.Sniffer", "MIME.Sniffer\MIME.Sniffer.csproj", "{03B5C62A-624D-4678-9CED-B24B087BC113}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MIME.Sniffer.Tests", "MIME.Sniffer.Tests\MIME.Sniffer.Tests.csproj", "{9595810F-BC8F-4F36-BCEF-C01E4BEB00BB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Misc", "Misc", "{610C55A4-DC73-48A2-B820-2AA9812F1ED2}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{03B5C62A-624D-4678-9CED-B24B087BC113}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03B5C62A-624D-4678-9CED-B24B087BC113}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03B5C62A-624D-4678-9CED-B24B087BC113}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03B5C62A-624D-4678-9CED-B24B087BC113}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9595810F-BC8F-4F36-BCEF-C01E4BEB00BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9595810F-BC8F-4F36-BCEF-C01E4BEB00BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9595810F-BC8F-4F36-BCEF-C01E4BEB00BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9595810F-BC8F-4F36-BCEF-C01E4BEB00BB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

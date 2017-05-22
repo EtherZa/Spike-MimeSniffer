@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{03B5C62A-624D-4678-9CED-B24B087BC113}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MIME.Sniffer</RootNamespace>
+    <AssemblyName>MIME.Sniffer</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CsvHelper, Version=2.0.0.0, Culture=neutral, PublicKeyToken=8c4959082be5c823, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\CsvHelper.2.16.3.0\lib\net45\CsvHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\SharpZipLib.0.86.0\lib\20\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenMcdf, Version=2.1.2.1274, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\OpenMcdf.2.1.2.1274\lib\OpenMcdf.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DocumentInspector.cs" />
+    <Compile Include="IDocStreamInspector.cs" />
+    <Compile Include="IDocument.cs" />
+    <Compile Include="IDocumentInspector.cs" />
+    <Compile Include="IMetadata.cs" />
+    <Compile Include="Inspectors\Bmp.cs" />
+    <Compile Include="Inspectors\ByteInspector.cs" />
+    <Compile Include="Inspectors\CompoundBinaryInspector.cs" />
+    <Compile Include="Inspectors\Csv.cs" />
+    <Compile Include="Inspectors\Doc.cs" />
+    <Compile Include="Inspectors\Document.cs" />
+    <Compile Include="Inspectors\Docx.cs" />
+    <Compile Include="Inspectors\Eml.cs" />
+    <Compile Include="Inspectors\Gif.cs" />
+    <Compile Include="Inspectors\Html.cs" />
+    <Compile Include="Inspectors\Icon.cs" />
+    <Compile Include="Inspectors\Jpeg2000.cs" />
+    <Compile Include="Inspectors\Jpeg.cs" />
+    <Compile Include="Inspectors\Mht.cs" />
+    <Compile Include="Inspectors\Msg.cs" />
+    <Compile Include="Inspectors\Odp.cs" />
+    <Compile Include="Inspectors\Ods.cs" />
+    <Compile Include="Inspectors\Odt.cs" />
+    <Compile Include="Inspectors\OfficeDocumentInspector.cs" />
+    <Compile Include="Inspectors\OpenDocumentInspector.cs" />
+    <Compile Include="Inspectors\OpenXmlInspector.cs" />
+    <Compile Include="Inspectors\Pdf.cs" />
+    <Compile Include="Inspectors\Png.cs" />
+    <Compile Include="Inspectors\Ppptx.cs" />
+    <Compile Include="Inspectors\Ppt.cs" />
+    <Compile Include="Inspectors\Rtf.cs" />
+    <Compile Include="Inspectors\TextInspector.cs" />
+    <Compile Include="Inspectors\Tiff.cs" />
+    <Compile Include="Inspectors\Txt.cs" />
+    <Compile Include="Inspectors\Vcf.cs" />
+    <Compile Include="Inspectors\Xls.cs" />
+    <Compile Include="Inspectors\Xlsb.cs" />
+    <Compile Include="Inspectors\Xlsx.cs" />
+    <Compile Include="Inspectors\Xps.cs" />
+    <Compile Include="Inspectors\Zip.cs" />
+    <Compile Include="Metadata\CsvMetadata.cs" />
+    <Compile Include="Metadata\TxtMetadata.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
